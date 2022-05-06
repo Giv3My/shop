@@ -1,0 +1,101 @@
+.header {
+  height: 70px;
+  background-color: rgb(240, 240, 240);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.header * {
+  font-family: 'Josefin Sans', sans-serif;
+  user-select: none;
+}
+
+.header__wrapper {
+  height: 100%;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  cursor: pointer;
+  color: rgb(77, 77, 77);
+}
+
+.header__logo h1 {
+  font-size: 32px;
+  transition: all ease 0.3s;
+}
+
+.header__logo:hover {
+  color: rgb(129, 129, 129);
+  transition: all ease 0.1s;
+}
+
+.header__buttons {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__buttons>div:not(:last-child) {
+  width: 300px;
+  height: 100%;
+  cursor: pointer;
+  color: rgb(77, 77, 77);
+  transition: all ease 0.2s;
+}
+
+.header__buttons>div:hover:not(:last-child) {
+  opacity: 0.7;
+  transition: all ease 0.3s;
+}
+
+.menu__button,
+.cart__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__button {
+  background-color: rgb(230, 230, 230);
+}
+
+.cart__button {
+  background-color: rgb(224, 224, 224);
+}
+
+.icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon>svg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease 0.2s;
+}
+
+.badge {
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  background-color: rgb(124, 124, 124);
+  color: #fff;
+}

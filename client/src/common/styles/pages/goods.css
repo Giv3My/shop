@@ -1,0 +1,16 @@
+.shop__container {
+  width: 1320px;
+  margin: 0 auto;
+}
+
+.goods__category {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.shop__wrapper {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 0;
+}

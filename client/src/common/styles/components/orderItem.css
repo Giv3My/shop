@@ -1,0 +1,22 @@
+.order__item {
+  width: 900px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 12px 3px rgba(34, 60, 80, 0.1);
+}
+
+.order__item p {
+  font-size: 20px;
+}
+
+.order__item__img img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.order__item__price {
+  font-weight: 700;
+}

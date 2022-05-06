@@ -1,0 +1,17 @@
+@import './common/styles/pages/all.css';
+@import './common/styles/components/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
