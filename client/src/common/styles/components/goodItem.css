@@ -64,3 +64,9 @@
 .item__price {
   font-size: 24px;
 }
+
+@media (max-width: 1120px) {
+  .good__item img {
+    height: 250px;
+  }
+}

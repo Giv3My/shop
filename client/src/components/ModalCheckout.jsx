@@ -20,8 +20,8 @@ const style = {
     outline: 'none'
   },
   modalWrapper: {
-    width: 350,
-    height: 200,
+    width: 400,
+    height: 250,
     padding: '32px',
     display: 'flex',
     flexDirection: 'column',
@@ -29,11 +29,6 @@ const style = {
   },
   modalTitle: {
     fontWeight: 600
-  },
-  buttonBlock: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
   }
 };
 
@@ -87,7 +82,9 @@ function ModalCheckout({ cartItems }) {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style.modalStyle}>
-        <div style={!orderId ? style.modalWrapper : { ...style.modalWrapper, width: 400, height: 70 }}>
+        <div
+          className={`modal__wrapper ${!!orderId && "modal__wrapper-orderId"}`}
+          style={!orderId ? style.modalWrapper : { ...style.modalWrapper, width: 460, height: 140 }}>
           {!orderId ? (
             <>
               <h2 style={style.modalTitle}>To make order enter email:</h2>
@@ -98,7 +95,10 @@ function ModalCheckout({ cartItems }) {
                 error={error}
                 helperText={error && 'Enter a valid email'}
               />
-              <div style={style.buttonBlock}>
+              <div
+                className="button__block"
+                style={style.buttonBlock}
+              >
                 <Button
                   variant='contained'
                   onClick={handleSumbit}

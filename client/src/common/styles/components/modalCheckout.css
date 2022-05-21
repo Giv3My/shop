@@ -1,0 +1,29 @@
+.button__block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 500px) {
+  .modal__wrapper-orderId {
+    width: 350px !important;
+    height: 160px !important;
+    padding: 22px !important;
+  }
+}
+
+@media(max-width: 440px) {
+  .modal__wrapper {
+    width: 350px !important;
+    padding: 22px !important;
+  }
+
+  .button__block {
+    flex-direction: column;
+  }
+
+  .button__block button+button {
+    margin-top: 10px;
+  }
+}

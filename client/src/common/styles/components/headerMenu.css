@@ -11,7 +11,7 @@
 .menu__active {
   height: 400px;
   opacity: 1;
-  z-index: 1;
+  z-index: 2;
   transition: all ease 0.5s;
 }
 
@@ -119,4 +119,16 @@
   font-size: 30px;
   font-weight: 600;
   text-align: center;
+}
+
+@media (max-width: 750px) {
+  .menu {
+    top: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+  .checkout__button {
+    width: 80%;
+  }
 }

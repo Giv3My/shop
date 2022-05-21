@@ -14,3 +14,41 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px 0;
 }
+
+@media (max-width: 1366px) {
+  .shop__container {
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .shop__container {
+    width: 920px;
+  }
+
+  .shop__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .shop__container {
+    width: 680px;
+  }
+}
+
+@media (max-width: 750px) {
+  .shop__container {
+    width: 480px;
+  }
+
+  .shop__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .shop__container {
+    width: 350px;
+  }
+}

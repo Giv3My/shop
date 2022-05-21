@@ -12,7 +12,7 @@ function CartItem({ item, addToCart, removeFromCart }) {
   return (
     <div key={item.id} className="cart__item">
       <p className="cart__item__title">{item.title}</p>
-      <div className="left__side">
+      <div className="right__side">
         <div className="cart__buttons">
           <button className="cart__button__dec" onClick={onRemoveFromCart}>
             <span>-</span>

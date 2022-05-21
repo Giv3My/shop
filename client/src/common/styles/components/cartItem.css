@@ -13,7 +13,7 @@
   text-overflow: ellipsis;
 }
 
-.left__side {
+.right__side {
   width: 200px;
   display: flex;
   justify-content: space-between;
@@ -61,4 +61,35 @@
 
 .cart__item__price {
   font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .cart__item__title {
+    width: 250px;
+  }
+}
+
+@media (max-width: 750px) {
+  .right__side {
+    width: 150px;
+  }
+
+  .cart__buttons {
+    width: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cart__item {
+    height: 60px;
+    flex-direction: column;
+  }
+
+  .cart__item+.cart__item {
+    margin-top: 10px;
+  }
+
+  .right__side {
+    width: 200px;
+  }
 }

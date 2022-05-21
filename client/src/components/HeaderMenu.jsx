@@ -99,7 +99,7 @@ function HeaderMenu({ menuActive, setMenuActive, activeMenuItem, cartActive, car
           </div>
         )}
       </div>
-    </div >
+    </div>
   )
 };
 

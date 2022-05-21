@@ -50,7 +50,7 @@ function Orders() {
             </div>
           </div>
         ) : (
-          <div className="order__detail">
+          <div className="order__info">
             <h1 className="order__number">Order track number: {currentOrder.id}</h1>
             <div className="order__items">
               {currentOrder.orderItems.map(orderItem => {
